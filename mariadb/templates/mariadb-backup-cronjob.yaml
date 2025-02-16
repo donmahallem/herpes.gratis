@@ -11,7 +11,7 @@ spec:
         spec:
           containers:
             - name: mariadb-backup
-              image: mariadb:11.6.2
+              image: mariadb:{{ .Values.service.mariadb.version }}
               command:
                 - "/bin/sh"
                 #- "-c"
